@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteMappingsManager">
+    <list>
+      <list>
+        <remote-mappings server-id="python@docker://kien_api:latest/python">
+          <settings>
+            <list>
+              <mapping local-root="/api" remote-root="/var/task" />
+            </list>
+          </settings>
+        </remote-mappings>
+        <remote-mappings server-id="python@docker-compose://[/home/kiennm/Downloads/flowermeister_intl/docker-compose.yml]:api//var/task/.venv/bin/python">
+          <settings>
+            <list>
+              <mapping local-root="/api" remote-root="/var/task" />
+            </list>
+          </settings>
+        </remote-mappings>
+      </list>
+    </list>
+  </component>
+</project>
