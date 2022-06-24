@@ -7,7 +7,7 @@ from playhouse.shortcuts import model_to_dict
 from urllib import response
 from models.matches import Matches
 from peewee import fn
-from typing import List, Optional
+from typing import List, Optional, Any
 import peewee
 import pydash
 
@@ -49,7 +49,7 @@ async def edit_match(match_id: str, match: PatchMatch):
     match_dict = match.__dict__
 
     data = {item: match_dict[item] for item in match_dict if match_dict[item]}
-    update = Matches.update(data).where(Mathces.id == match_id).execute()
+    update = Matches.update(data).where(Matches.id == match_id).execute()
     result = Matches.select().where(Matches.id == match_id).get()
     return model_to_dict(result)
 

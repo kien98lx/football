@@ -10,4 +10,5 @@ class Matches(PeeWeeBaseModel):
     start_time = p.DateTimeField()
     place = p.TextField()
 
-    
+    def create_matches():
+        print(1)
