@@ -1,21 +1,18 @@
 <template>
   <v-app>
     <v-main>
-      <UserPage/>
+      <router-view></router-view>
     </v-main>
+
    
   </v-app>
 </template>
 
 <script>
 
-import UserPage from './components/UserPage.vue'
+
 export default {
   name: 'App',
-
-  components: {
-    UserPage
-  },
 
   data: () => ({
     //
